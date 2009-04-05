@@ -84,7 +84,7 @@ Else
         'If myrecord.Fields("wrv_name") = "Google搜索帮助" Then
         
         filenum = FreeFile
-        thefile = UTF8Encode(myrecord.Fields("wrv_name")) & ".txt"
+        thefile = UTF8Encode(LCase(myrecord.Fields("wrv_name"))) & ".txt"
         Open App.Path & "\page\" & thefile For Output As filenum ' to clear file
         Close filenum
         Open App.Path & "\page\" & thefile For Append As filenum
@@ -239,7 +239,7 @@ End Function
     Dim wch  As String
     Dim uch As String
     Dim szRet As String
-    Dim x As Long
+    Dim X As Long
     Dim inputLen As Long
     Dim nAsc  As Long
     Dim nAsc2 As Long
@@ -250,9 +250,9 @@ End Function
         Exit Function
     End If
     inputLen = Len(szInput)
-    For x = 1 To inputLen
+    For X = 1 To inputLen
     '得到每个字符
-        wch = Mid(szInput, x, 1)
+        wch = Mid(szInput, X, 1)
         '得到相应的UNICODE编码
         nAsc = AscW(wch)
     '对于<0的编码　其需要加上65536

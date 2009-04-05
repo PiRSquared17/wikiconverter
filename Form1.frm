@@ -235,7 +235,7 @@ Set skl = New dbutils
 
 
 'path of db
-thepath = Trim(loc.Text)
+thepath = Trim(Loc.Text)
 mydata.thedbfilelocation = thepath
 
 ' Database table to query
@@ -258,7 +258,7 @@ mycounter = Text2.Text
 counter1.thecounter = mycounter
 
 
-If loc.Text <> "" And tabtxt.Text <> "" And mycounter <> "" Then
+If Loc.Text <> "" And tabtxt.Text <> "" And mycounter <> "" Then
    'And IsNumeric(Text2.Text) = True Then
     Call exp.exportmydb(thepath, mysql, myfile, mycounter)
 Else
@@ -295,7 +295,7 @@ Cmdasci.Enabled = True
 CmDialog1.Filter = "All Files (*.*)|*.*| Access Database Files (*.mdb)|*.mdb|  "
 CmDialog1.FilterIndex = 2
 CmDialog1.Action = 1
-loc.Text = CmDialog1.FileName
+Loc.Text = CmDialog1.FileName
 Exit Sub
 openerror1:
 MsgBox (Err.Description)
@@ -314,13 +314,13 @@ Dim myfile As dbutils
 Set myfile = New dbutils
 
 
-thepath = Trim(loc.Text)
+thepath = Trim(Loc.Text)
 mydata.thedbfilelocation = thepath
 
 Cmdexp.Enabled = True
 Cmdasci.Enabled = True
 
-If loc <> "" Then
+If Loc <> "" Then
     Call myfile.gettables(thepath, frmMain, List1)
     
 Else
@@ -350,7 +350,7 @@ Dim thetable
 'selected item in list gets displayed in tabtxt
 tabtxt.Text = List1.List(List1.ListIndex)
 
-thepath = Trim(loc.Text)
+thepath = Trim(Loc.Text)
 thetable = Trim(tabtxt.Text)
 
 'display max number of fields in table
