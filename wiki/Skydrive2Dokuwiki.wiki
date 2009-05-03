@@ -1,12 +1,8 @@
 #summary windowsLiveSkydrive to Dokuwiki
 
 = Introduction =
-{{{
-"{{temp.files:tinyicons_sprites.png}}{{temp.files:tinyicons_sprites.png}}" ==> "{{temp.files:tinyicons_sprites.png}}"
 
-"{{temp.files:" ==> ""(删除)
-
-}}}
+利用正则表达式清除HTML代码中的不需要源码
 
 = skydrive代码清理.pga的powergrep源码 =
 
