@@ -16,7 +16,7 @@
 
 ２，执行＂skydrive代码清理.pga＂中第1-6的替换一次．
 
-３，把temp.htm的内容使用Html to Dokuwiki Convertor [version 2007-10-22] 工具转换后，把所得转换结果再全部COPY并覆盖temp.htm原来全文．
+３，把temp.htm的内容使用＂Html to Dokuwiki Convertor version 2007-10-22＂ 工具转换后，把所得转换结果再全部COPY并覆盖temp.htm原来全文．
 
 ４，执行＂skydrive代码清理.pga＂中第7-1的替换一次．
 
