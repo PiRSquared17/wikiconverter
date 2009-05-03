@@ -24,7 +24,8 @@
 选取“
 {{{
 <div jotId="goog-attachment-inner" style="">
-}}}”和“添加附件: 
+}}}
+”和“添加附件: 
 {{{
 <input contentEditable="false" onclick="this.blur()" name="userfile" type="file" onchange="return JOT_ATTACH_handleUploadXfer()" />
 <input type="hidden" name="pagePath" value="/Home/projects/sitebuild/pagedesign" /></p></form></div>
@@ -46,4 +47,5 @@ a href="https://sites.google.com/site/
 ”删空，“
 {{{
   \* 
-}}}”替换为一个换行符(相当于word里面的^p)
+}}}
+”替换为一个换行符(相当于word里面的^p)
