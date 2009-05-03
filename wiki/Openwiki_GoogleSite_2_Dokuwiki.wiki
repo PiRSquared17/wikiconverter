@@ -18,5 +18,11 @@
 
 2， 登录Google Site(使用Safari浏览器比较快)，点编辑页面＝》html，全选，运行Html2DokuWiki.exe进行转换，然后使用office word进行修正。(具体为：\\替换为^p^p，“^p后面加一个空格”反复替换为^p^p，^p^p^p反复替换为^p^p)
 
-3， 对于Google Site的上传附件，{{{可点显示页面源文件，选取“<div jotId="goog-attachment-inner" style="">”和“添加附件: <input contentEditable="false" onclick="this.blur()" name="userfile" type="file" onchange="return JOT_ATTACH_handleUploadXfer()" />
-<input type="hidden" name="pagePath" value="/Home/projects/sitebuild/pagedesign" /></p></form></div>”之间的内容即附件所在源html，使用notepad++，把所有“a href="/site/”替换为“a href="https://sites.google.com/site/”，然后使用Powergrep进行正则式替换(可下载[[http://code.google.com/p/wikiconverter/|wiki附件代码清理.pga]])： “- 创建时间[\w\W]*?删除]]”删空，“  \* ”替换为一个换行符(相当于word里面的^p)}}}
+3， 对于Google Site的上传附件，
+{{{
+可点显示页面源文件，
+选取“<div jotId="goog-attachment-inner" style="">”和“添加附件: <input contentEditable="false" onclick="this.blur()" name="userfile" type="file" onchange="return JOT_ATTACH_handleUploadXfer()" />
+<input type="hidden" name="pagePath" value="/Home/projects/sitebuild/pagedesign" /></p></form></div>”之间的内容即附件所在源html，
+使用notepad++，把所有“a href="/site/”替换为“a href="https://sites.google.com/site/”，
+然后使用Powergrep进行正则式替换(可下载[[http://code.google.com/p/wikiconverter/|wiki附件代码清理.pga]])： “- 创建时间[\w\W]*?删除]]”删空，“  \* ”替换为一个换行符(相当于word里面的^p)
+}}}
