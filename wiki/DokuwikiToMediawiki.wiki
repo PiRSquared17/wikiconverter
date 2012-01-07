@@ -1,0 +1,15 @@
+#summary 把Dokuwiki的含中文page一一导入Mediawiki.
+
+= 概述 =
+
+1,利用Mediawiki的页面导出功能先批量导出（把需要导出的页面在列表中列出即可）为一个export.xml文件
+2，利用工具把PAGE页面一一添加到该XML文件中出
+3，利用Mediawiki的页面导入功能批量导入
+
+
+= 步骤 =
+
+Add your content here.  Format your content with:
+  * Text in *bold* or _italic_
+  * Headings, paragraphs, and lists
+  * Automatic links to other wiki pages
