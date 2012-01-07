@@ -1,4 +1,4 @@
-#summary 把Dokuwiki的含中文page一一导入Mediawiki.
+#summary 把Dokuwiki的page(含中文)批量导入Mediawiki.
 
 = 概述 =
 
