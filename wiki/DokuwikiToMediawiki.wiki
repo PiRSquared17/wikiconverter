@@ -12,6 +12,6 @@
 = 步骤 =
 
 难点:
-  * 把DW中的PAGE的TXT文件名（先DEURL再）DeUtf8；难点在于DW中一些特殊字符如♯۰等无法解码，必须把相应的文件名改名后再进行，否则程序会死机。
+  * 把DW中的PAGE的TXT文件名（先DEURL再）DeUtf8；难点在于DW中一些特殊字符如♯۰等无法解码，必须把相应的文件名改名后再进行，否则程序会死机。而且不能把文件的路径一起带进来解码，否则会解码无效
   * Headings, paragraphs, and lists
   * Automatic links to other wiki pages
