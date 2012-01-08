@@ -3,13 +3,15 @@
 = 概述 =
 
 1,利用Mediawiki的页面导出功能先批量导出（把需要导出的页面在列表中列出即可）为一个export.xml文件
+
 2，利用工具把PAGE页面一一添加到该XML文件中出
+
 3，利用Mediawiki的页面导入功能批量导入
 
 
 = 步骤 =
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
+难点:
+  * 把DW中的PAGE的TXT文件名（先DEURL再）DeUtf8；难点在于DW中一些特殊字符如♯۰等无法解码，必须把相应的文件名改名后再进行，否则程序会死机。
   * Headings, paragraphs, and lists
   * Automatic links to other wiki pages
